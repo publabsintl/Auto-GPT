@@ -45,7 +45,6 @@ def generate_image_with_hf(prompt: str, filename: str) -> str:
     Args:
         prompt (str): The prompt to use
         filename (str): The filename to save the image to
-        
 
     Returns:
         str: The filename of the image
