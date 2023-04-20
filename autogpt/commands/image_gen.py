@@ -35,7 +35,7 @@ def generate_image(prompt: str, size: int = 256) -> str:
         return generate_image_with_hf(prompt, filename)
     # SD WebUI
     elif CFG.image_provider == "sdwebui":
-        return generate_image_with_sd_webui(prompt, filename, size)
+        return generate_image_with_sd_webui(prompt, filename, size=size)
     return "No Image Provider Set"
 
 
