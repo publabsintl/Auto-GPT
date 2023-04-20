@@ -29,7 +29,7 @@ def generate_image(prompt: str, size: int = 256) -> str:
 
     # DALL-E
     if CFG.image_provider == "dalle":
-        return generate_image_with_dalle(prompt, filename)
+        return generate_image_with_dalle(prompt, filename, size)
     # HuggingFace
     elif CFG.image_provider == "huggingface":
         return generate_image_with_hf(prompt, filename)
